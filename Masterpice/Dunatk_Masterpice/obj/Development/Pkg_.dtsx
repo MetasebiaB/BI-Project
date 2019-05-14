@@ -1,0 +1,2113 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/30/2019 12:19:31 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-9HA8H8CP"
+  DTS:CreatorName="LAPTOP-9HA8H8CP\meti"
+  DTS:DTSID="{B9832294-2843-4FE5-AAE4-7627BC19BE5C}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.0900.40"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Pkg_"
+  DTS:PackageType="5"
+  DTS:VersionBuild="28"
+  DTS:VersionGUID="{12958827-F65A-4222-A1C0-87751A74FCBD}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[(PackagePart)100 36 220 45,53000 MPSTGT mbedada]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{8C419F49-4618-4CC0-B651-F83B828A9C2A}"
+      DTS:ObjectName="(PackagePart)100 36 220 45,53000 MPSTGT mbedada">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=100.36.220.45,53000;User ID=mbedada;Initial Catalog=MPSTGT;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVTDXhtPtXkulx/L4OZ/jzwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAB3LcbPCRXvUJtAVWulq2rwxwAhJ5x9RetQhPQ2+KRRwAAAAAOgAAAAAIAACAAAACE7R3IyXxdNkcAhulzLtZnpYEw0OlRkZ3L3U5PCW+kDxAAAABiRyYLKSShW0wMJDCPh0sBQAAAABtVJ4CbBUTmCCxwvjq9cxwdGXALJx8QFWYlFyiNF3gfxl/pwNzbP/cSIPqNpXxxDl7po0uBNz7L6sPgwCCYe4k</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[100.36.220.45,53000.MPSTGT.mbedada]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{7957E356-5021-45CB-9E99-9960AFE4FF75}"
+      DTS:ObjectName="100.36.220.45,53000.MPSTGT.mbedada">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=100.36.220.45,53000;User ID=mbedada;Initial Catalog=MPSTGT;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVTDXhtPtXkulx/L4OZ/jzwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACsJbbhQfXK16Ak9bLwIETURFQj+5N3rW8AVxKqmbKk5wAAAAAOgAAAAAIAACAAAADSc00CpzYRhSrNgqOPR61E5UHktslf8fS9sN7lrQzfGhAAAAB/GRctQV6zdCg9H4sS+u5FQAAAADkMQiF/oHsZe9RN3NBVyJxPh3zpn5p0mH3dBKA/0Gk4rto0eEsJFWVtUxi64oYS6/8LCr5/T4j9LOeRdM+onIs</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[100.36.220.45,53000.MPSTGT.mbedada 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{10991EAF-F8C3-4CDC-90B5-3F1183065CD0}"
+      DTS:ObjectName="100.36.220.45,53000.MPSTGT.mbedada 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=100.36.220.45,53000;User ID=mbedada;Initial Catalog=MPSTGT;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVTDXhtPtXkulx/L4OZ/jzwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB4TRREtOrDmesquBMCFhwriew+Dmkp6mN8oUFA4LZdzAAAAAAOgAAAAAIAACAAAACxCIfeklio0KBIpCTVoDR7RJQMWIvL7PxgXvEWzbmiNRAAAACh285LEsm9fsASJaf1huqgQAAAAGqeJozsCaRl2FYGFQ/agbMnmXIl2xSJ4ovJ8tpXsV/uFVSoXyCh/0E81GI3lYGASgceHfp5S6JfbbnRvnVJyZY</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[100.36.220.45,53000.MPSTGT.mbedada 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{528057A7-53FB-4461-B231-148244509547}"
+      DTS:ObjectName="100.36.220.45,53000.MPSTGT.mbedada 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=100.36.220.45,53000;User ID=mbedada;Initial Catalog=MPSTGT;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVTDXhtPtXkulx/L4OZ/jzwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADbdcdhP5eM3l99qNR4II//f08mu+Md5zNVygCUJ5/RzQAAAAAOgAAAAAIAACAAAADtQkRo1VihvZo6FI0HgrkMiqHcKL9n+qYBYT09QKm9pRAAAADkNGhr+ITsjaQHagpf4HJYQAAAACVnPQFr/hGBJHL6Ht/6AkuWCULeFUu65Zb4iWptt59TDN71stD2NwZugOuC/BhACiwEDoV+N0DPL4UBCbTsYTg</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[OData Source]"
+      DTS:CreationName="ODATA"
+      DTS:DTSID="{EF8B12B8-1CF8-4B14-B93F-31FA911330FC}"
+      DTS:ObjectName="OData Source">
+      <DTS:ObjectData>
+        <ODataConnectionManager
+          UserName="sharepoint@dunatk.com"
+          Url="https://dunatkcom.sharepoint.com/sites/masterpieces/_vti_bin/listdata.svc"
+          ConnectionString="Service Document Url=https://dunatkcom.sharepoint.com/sites/masterpieces/_vti_bin/listdata.svc;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;Cookie=&quot;SPOIDCRL=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjUsMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAwNDUzOWU4OWZAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfHNoYXJlcG9pbnRAZHVuYXRrLmNvbSwxMzIwMTE0MjMwODAwMDAwMDAsMTMyMDA0Mjc0NjEwMDAwMDAwLDEzMjAxMjI4NzA4NDI0MTY4MiwwLjAuMC4wLDQsODVkZGY3ZTktODA2OC00YmI2LTg5NzktNDQ3NjE0NDJlMzlhLCwsYzQyZGQ4OWUtOTBlMC0wMDAwLTM4MjctMTQyNWJlNWZmMjZkLGM0MmRkODllLTkwZTAtMDAwMC0zODI3LTE0MjViZTVmZjI2ZCwsMCwwLDAsLGxLTVNSRmlzWjh4azRMZ2xrRE5HeEVxN0ZpaDgrWmRhaXlYaDN4N2x4aVpBblRDWFBTS083MTVrZDFvWUs4eEkrNkZZMSs0WmRZMFJxbHdHRk5DYUllSG85MTFGcUhXTVBCRzJuL3V1MDEyOFVlMkE4WnVaZUpJUDJLMGlsVDBXWDlJSVJiN3FKV0U4bVFIS2F1SXhhYkM3RVVNSXJaa0ZZNFhPeklsMFpHNjRmNHFiamVJQjhxY3RiN0hGaWg2ajJ0aUtrdyt2TmRGTDhJNlI2ZW01SWZZNElvN3JnZitTYTlkNm5MUnFmTEZTYkhDc1doQzN3SUZvR3hvM3VKN2hRS253ZHN1NlAvQ21mYnNha29jcDF4bnZIcW5MbGQ5MW0ydTlLUXN6RURrNGhnODJSQlkxTW1FMmxFWGlVSy9PdnZrakdLRGpkdE14c1ArN0YydkY3dz09PC9TUD4=&quot;;User ID=sharepoint@dunatk.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104"
+          MicrosoftOnlineServicesAuth="True"
+          AuthType="MicrosoftOnlineService">
+          <Password
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVTDXhtPtXkulx/L4OZ/jzwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADX7Ddt/Umz+f/gnVMMTr7HMSLwgeJotwvyGVLJt7GBBAAAAAAOgAAAAAIAACAAAACyChuOO/xwevHiQyrQVt3QhiKsVJwAz8GonIZFk4dr6CAAAAChMtNiNqf3AMjX53OYXSLk47HPrRbknSDNxZCQGXYE1UAAAADr3c8lf0ihqj1GX0o9215Hft1PF1yfjXgdMQNxa8XRgFDL06NJXd1ponsxQw7fUgHed40uaeDBCSJy4DNT3ctm</Password>
+        </ODataConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{55F883FE-F1C9-4C0F-BE36-EEF8FDF21680}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;DELETE  [dbo].[stgCustomerAddress]&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="VarDelete">
+      <DTS:VariableValue
+        DTS:DataType="8">DELETE  [dbo].[stgCustomerAddress]</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{C7838722-BB26-4057-ABE1-9F90CFD5D380}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;if exists (select 1 from table ) begin select 1 end else begin select 0 end&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="VarEvaluate">
+      <DTS:VariableValue
+        DTS:DataType="8">if exists (select 1 from table ) begin select 1 end else begin select 0 end</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{1B48159A-0F27-424B-9461-F239F57E21B4}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;DECLARE @packageID uniqueidentifier,&#xA;        @packageName varchar(100),&#xA;  @sourceName varchar(100),&#xA;  @startTime datetime,&#xA;  @status char(1),&#xA;  @ErrorCode varchar(20),&#xA;  @ErrorMessage varchar(max),&#xA;  @EndTime datetime,&#xA;  @RunBy varchar(100),&#xA;  @RunDate datetime2(7)&#xA;set @packageID=?&#xA;set @packageName =?&#xA;set @sourceName ='Sharepoint'&#xA;set @startTime = GETDATE()&#xA;set @status ='S'&#xA;set @ErrorCode=?&#xA;set @ErrorMessage=?&#xA;set @EndTime=GETDATE()&#xA;set @RunBy = SUSER_NAME ()&#xA;set @RunDate =GETDATE()&#xA;&#xA;INSERT INTO SSIS_Log.PackageLog&#xA;(&#xA;PackageID,&#xA;PackageName,&#xA;SourceName,&#xA;StartTime,&#xA;Status,&#xA;ErrorCode,&#xA;ErrorMessage,&#xA;EndTime,&#xA;RunDate,&#xA;RunBy&#xA;)&#xA;VALUES&#xA;(&#xA;@packageID,&#xA;@packageName,&#xA;@sourceName ,&#xA;@startTime,&#xA;@status ,&#xA;@ErrorCode,&#xA;@ErrorMessage,&#xA;@EndTime,&#xA;@RunBy,&#xA;@RunDate &#xA;)&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="VarLogError">
+      <DTS:VariableValue
+        DTS:DataType="8">DECLARE @packageID uniqueidentifier,
+        @packageName varchar(100),
+  @sourceName varchar(100),
+  @startTime datetime,
+  @status char(1),
+  @ErrorCode varchar(20),
+  @ErrorMessage varchar(max),
+  @EndTime datetime,
+  @RunBy varchar(100),
+  @RunDate datetime2(7)
+set @packageID=?
+set @packageName =?
+set @sourceName ='Sharepoint'
+set @startTime = GETDATE()
+set @status ='S'
+set @ErrorCode=?
+set @ErrorMessage=?
+set @EndTime=GETDATE()
+set @RunBy = SUSER_NAME ()
+set @RunDate =GETDATE()
+
+INSERT INTO SSIS_Log.PackageLog
+(
+PackageID,
+PackageName,
+SourceName,
+StartTime,
+Status,
+ErrorCode,
+ErrorMessage,
+EndTime,
+RunDate,
+RunBy
+)
+VALUES
+(
+@packageID,
+@packageName,
+@sourceName ,
+@startTime,
+@status ,
+@ErrorCode,
+@ErrorMessage,
+@EndTime,
+@RunBy,
+@RunDate 
+)</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{53A3A2CF-A22D-416F-9F5B-7B89EDE095CB}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="VarValue">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\CheckData_Customer_Address"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{57BEE3AE-2A0D-4896-A0D1-35E5BF89CDA4}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="CheckData_Customer_Address"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:EventHandlers>
+        <DTS:EventHandler
+          DTS:refId="Package\CheckData_Customer_Address.EventHandlers[OnError]"
+          DTS:CreationName="OnError"
+          DTS:DTSID="{E468E450-3733-4957-9C8E-D6627CAA7D2D}"
+          DTS:EventID="1140884170"
+          DTS:EventName="OnError"
+          DTS:LocaleID="-1">
+          <DTS:Variables>
+            <DTS:Variable
+              DTS:CreationName=""
+              DTS:Description="The propagate property of the event"
+              DTS:DTSID="{A3518DAF-7D6A-4415-A359-8550064D6E17}"
+              DTS:IncludeInDebugDump="6789"
+              DTS:Namespace="System"
+              DTS:ObjectName="Propagate">
+              <DTS:VariableValue
+                DTS:DataType="11">-1</DTS:VariableValue>
+            </DTS:Variable>
+          </DTS:Variables>
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\CheckData_Customer_Address.EventHandlers[OnError]\Execute SQL Task"
+              DTS:CreationName="Microsoft.ExecuteSQLTask"
+              DTS:Description="Execute SQL Task"
+              DTS:DTSID="{9C5E8B6A-57EB-4B65-9FA8-A328D7F5A604}"
+              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Execute SQL Task">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <SQLTask:SqlTaskData
+                  SQLTask:Connection="{528057A7-53FB-4461-B231-148244509547}"
+                  SQLTask:SqlStmtSourceType="Variable"
+                  SQLTask:SqlStatementSource="User::VarLogError" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="0"
+                    SQLTask:DtsVariableName="System::PackageID"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="72"
+                    SQLTask:ParameterSize="-1" />
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="1"
+                    SQLTask:DtsVariableName="System::PackageName"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="129"
+                    SQLTask:ParameterSize="-1" />
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="2"
+                    SQLTask:DtsVariableName="System::ErrorCode"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="129"
+                    SQLTask:ParameterSize="-1" />
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="3"
+                    SQLTask:DtsVariableName="System::ErrorDescription"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="129"
+                    SQLTask:ParameterSize="-1" />
+                </SQLTask:SqlTaskData>
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
+        </DTS:EventHandler>
+      </DTS:EventHandlers>
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{7957E356-5021-45CB-9E99-9960AFE4FF75}"
+          SQLTask:SqlStmtSourceType="Variable"
+          SQLTask:SqlStatementSource="User::VarEvaluate"
+          SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="NewResultName"
+            SQLTask:DtsVariableName="User::VarEvaluate" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Delete"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{886ddf1c-3b44-4804-a3a6-e115af7cff83}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Delete"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:EventHandlers>
+        <DTS:EventHandler
+          DTS:refId="Package\Delete.EventHandlers[OnError]"
+          DTS:CreationName="OnError"
+          DTS:DTSID="{B67C443E-431A-4D5D-AE81-3812A8E90055}"
+          DTS:EventID="1140884170"
+          DTS:EventName="OnError"
+          DTS:LocaleID="-1">
+          <DTS:Variables>
+            <DTS:Variable
+              DTS:CreationName=""
+              DTS:Description="The propagate property of the event"
+              DTS:DTSID="{3BAB1795-3E04-470C-93BF-39190694A5C9}"
+              DTS:IncludeInDebugDump="6789"
+              DTS:Namespace="System"
+              DTS:ObjectName="Propagate">
+              <DTS:VariableValue
+                DTS:DataType="11">-1</DTS:VariableValue>
+            </DTS:Variable>
+          </DTS:Variables>
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\Delete.EventHandlers[OnError]\Execute SQL Task"
+              DTS:CreationName="Microsoft.ExecuteSQLTask"
+              DTS:Description="Execute SQL Task"
+              DTS:DTSID="{E373EC20-B587-44E8-8702-2D1A2053BA95}"
+              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Execute SQL Task">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <SQLTask:SqlTaskData
+                  SQLTask:Connection="{8C419F49-4618-4CC0-B651-F83B828A9C2A}"
+                  SQLTask:SqlStmtSourceType="Variable"
+                  SQLTask:SqlStatementSource="User::VarLogError" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="0"
+                    SQLTask:DtsVariableName="System::PackageID"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="72"
+                    SQLTask:ParameterSize="-1" />
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="1"
+                    SQLTask:DtsVariableName="System::PackageName"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="129"
+                    SQLTask:ParameterSize="-1" />
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="2"
+                    SQLTask:DtsVariableName="System::ErrorCode"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="20"
+                    SQLTask:ParameterSize="-1" />
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="3"
+                    SQLTask:DtsVariableName="System::ErrorDescription"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="129"
+                    SQLTask:ParameterSize="-1" />
+                </SQLTask:SqlTaskData>
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
+        </DTS:EventHandler>
+      </DTS:EventHandlers>
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{7957E356-5021-45CB-9E99-9960AFE4FF75}"
+          SQLTask:SqlStmtSourceType="Variable"
+          SQLTask:SqlStatementSource="User::VarDelete" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Load"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{fea0ed5c-7602-4588-97ca-67776236a02d}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:EventHandlers>
+        <DTS:EventHandler
+          DTS:refId="Package\Load.EventHandlers[OnError]"
+          DTS:CreationName="OnError"
+          DTS:DTSID="{DF5E14A9-20F1-4BC7-91D1-836DB04D0FF8}"
+          DTS:EventID="1140884170"
+          DTS:EventName="OnError"
+          DTS:LocaleID="-1">
+          <DTS:Variables>
+            <DTS:Variable
+              DTS:CreationName=""
+              DTS:Description="The propagate property of the event"
+              DTS:DTSID="{81654BC2-E69D-4AD6-A3B9-94079B0F073C}"
+              DTS:IncludeInDebugDump="6789"
+              DTS:Namespace="System"
+              DTS:ObjectName="Propagate">
+              <DTS:VariableValue
+                DTS:DataType="11">-1</DTS:VariableValue>
+            </DTS:Variable>
+          </DTS:Variables>
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\Load.EventHandlers[OnError]\Execute SQL Task"
+              DTS:CreationName="Microsoft.ExecuteSQLTask"
+              DTS:Description="Execute SQL Task"
+              DTS:DTSID="{6CF07717-1EE3-47FD-91E5-30DC02FF7002}"
+              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Execute SQL Task">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <SQLTask:SqlTaskData
+                  SQLTask:Connection="{8C419F49-4618-4CC0-B651-F83B828A9C2A}"
+                  SQLTask:SqlStmtSourceType="Variable"
+                  SQLTask:SqlStatementSource="User::VarLogError" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="0"
+                    SQLTask:DtsVariableName="System::PackageID"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="72"
+                    SQLTask:ParameterSize="-1" />
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="1"
+                    SQLTask:DtsVariableName="System::PackageName"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="129"
+                    SQLTask:ParameterSize="-1" />
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="2"
+                    SQLTask:DtsVariableName="System::ErrorCode"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="20"
+                    SQLTask:ParameterSize="-1" />
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="3"
+                    SQLTask:DtsVariableName="System::ErrorDescription"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="129"
+                    SQLTask:ParameterSize="-1" />
+                </SQLTask:SqlTaskData>
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
+        </DTS:EventHandler>
+      </DTS:EventHandlers>
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load\Derived Column 1"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Load\Derived Column 1.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load\Derived Column 1.Inputs[Derived Column Input].Columns[CustomerIDId]"
+                      cachedDataType="i4"
+                      cachedName="CustomerIDId"
+                      lineageId="Package\Load\OData Source.Outputs[Output].Columns[CustomerIDId]" />
+                    <inputColumn
+                      refId="Package\Load\Derived Column 1.Inputs[Derived Column Input].Columns[AddressIDId]"
+                      cachedDataType="i4"
+                      cachedName="AddressIDId"
+                      lineageId="Package\Load\OData Source.Outputs[Output].Columns[AddressIDId]" />
+                    <inputColumn
+                      refId="Package\Load\Derived Column 1.Inputs[Derived Column Input].Columns[Title]"
+                      cachedDataType="nText"
+                      cachedName="Title"
+                      lineageId="Package\Load\OData Source.Outputs[Output].Columns[Title]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load\Derived Column 1.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Load\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load\Derived Column 1.Outputs[Derived Column Output].Columns[[CustomerIDId]]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Load\Derived Column 1.Outputs[Derived Column Output].Columns[[CustomerIDId]]"
+                      name="[CustomerIDId]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_I4)#{Package\Load\OData Source.Outputs[Output].Columns[CustomerIDId]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_I4)CustomerIDId</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load\Derived Column 1.Outputs[Derived Column Output].Columns[[AddressIDId]]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Load\Derived Column 1.Outputs[Derived Column Output].Columns[[AddressIDId]]"
+                      name="[AddressIDId]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_I4)#{Package\Load\OData Source.Outputs[Output].Columns[AddressIDId]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_I4)AddressIDId</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load\Derived Column 1.Outputs[Derived Column Output].Columns[[Title]]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Load\Derived Column 1.Outputs[Derived Column Output].Columns[[Title]]"
+                      name="[Title]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_STR,50,1252)(DT_WSTR,50)#{Package\Load\OData Source.Outputs[Output].Columns[Title]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_STR,50,1252)(DT_WSTR,50)Title</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load\Derived Column 1.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Load\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load\OData Source"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="OData Source Component;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Read data from OData services"
+              name="OData Source"
+              usesDispositions="true">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Name of the collection to be retrieved from the service."
+                  expressionType="Notify"
+                  name="CollectionName">CustomerAddress</property>
+                <property
+                  dataType="System.Int32"
+                  description="The default maximum length for a string that has no maxlength specified in the schema."
+                  name="DefaultStringLength">4000</property>
+                <property
+                  dataType="System.String"
+                  description="Query in the url. "
+                  expressionType="Notify"
+                  name="Query"></property>
+                <property
+                  dataType="System.String"
+                  description="Resource path of the collection to be retrieved from the service."
+                  expressionType="Notify"
+                  name="ResourcePath"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="When set to true, use the resource path as requested collection; otherwise, use the collection name."
+                  expressionType="Notify"
+                  name="UseResourcePath">false</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.OData</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load\OData Source.Connections[Connection]"
+                  connectionManagerID="Package.ConnectionManagers[OData Source]"
+                  connectionManagerRefId="Package.ConnectionManagers[OData Source]"
+                  description="Connection to OData Service"
+                  name="Connection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load\OData Source.Outputs[Output]"
+                  name="Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load\OData Source.Outputs[Output].Columns[CustomerIDId]"
+                      dataType="i4"
+                      externalMetadataColumnId="Package\Load\OData Source.Outputs[Output].ExternalColumns[CustomerIDId]"
+                      lineageId="Package\Load\OData Source.Outputs[Output].Columns[CustomerIDId]"
+                      name="CustomerIDId" />
+                    <outputColumn
+                      refId="Package\Load\OData Source.Outputs[Output].Columns[AddressIDId]"
+                      dataType="i4"
+                      externalMetadataColumnId="Package\Load\OData Source.Outputs[Output].ExternalColumns[AddressIDId]"
+                      lineageId="Package\Load\OData Source.Outputs[Output].Columns[AddressIDId]"
+                      name="AddressIDId" />
+                    <outputColumn
+                      refId="Package\Load\OData Source.Outputs[Output].Columns[Title]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Load\OData Source.Outputs[Output].ExternalColumns[Title]"
+                      lineageId="Package\Load\OData Source.Outputs[Output].Columns[Title]"
+                      name="Title" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load\OData Source.Outputs[Output].ExternalColumns[ContentTypeID]"
+                      dataType="nText"
+                      name="ContentTypeID" />
+                    <externalMetadataColumn
+                      refId="Package\Load\OData Source.Outputs[Output].ExternalColumns[Title]"
+                      dataType="nText"
+                      name="Title" />
+                    <externalMetadataColumn
+                      refId="Package\Load\OData Source.Outputs[Output].ExternalColumns[ComplianceAssetId]"
+                      dataType="nText"
+                      name="ComplianceAssetId" />
+                    <externalMetadataColumn
+                      refId="Package\Load\OData Source.Outputs[Output].ExternalColumns[CustomerIDId]"
+                      dataType="i4"
+                      name="CustomerIDId" />
+                    <externalMetadataColumn
+                      refId="Package\Load\OData Source.Outputs[Output].ExternalColumns[AddressIDId]"
+                      dataType="i4"
+                      name="AddressIDId" />
+                    <externalMetadataColumn
+                      refId="Package\Load\OData Source.Outputs[Output].ExternalColumns[Id]"
+                      dataType="i4"
+                      name="Id" />
+                    <externalMetadataColumn
+                      refId="Package\Load\OData Source.Outputs[Output].ExternalColumns[ContentType]"
+                      dataType="nText"
+                      name="ContentType" />
+                    <externalMetadataColumn
+                      refId="Package\Load\OData Source.Outputs[Output].ExternalColumns[Modified]"
+                      dataType="dbTimeStamp"
+                      name="Modified" />
+                    <externalMetadataColumn
+                      refId="Package\Load\OData Source.Outputs[Output].ExternalColumns[Created]"
+                      dataType="dbTimeStamp"
+                      name="Created" />
+                    <externalMetadataColumn
+                      refId="Package\Load\OData Source.Outputs[Output].ExternalColumns[CreatedById]"
+                      dataType="i4"
+                      name="CreatedById" />
+                    <externalMetadataColumn
+                      refId="Package\Load\OData Source.Outputs[Output].ExternalColumns[ModifiedById]"
+                      dataType="i4"
+                      name="ModifiedById" />
+                    <externalMetadataColumn
+                      refId="Package\Load\OData Source.Outputs[Output].ExternalColumns[Owshiddenversion]"
+                      dataType="i4"
+                      name="Owshiddenversion" />
+                    <externalMetadataColumn
+                      refId="Package\Load\OData Source.Outputs[Output].ExternalColumns[Version]"
+                      dataType="nText"
+                      name="Version" />
+                    <externalMetadataColumn
+                      refId="Package\Load\OData Source.Outputs[Output].ExternalColumns[Path]"
+                      dataType="nText"
+                      name="Path" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load\OData Source.Outputs[Error output]"
+                  isErrorOut="true"
+                  name="Error output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load\OData Source.Outputs[Error output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load\OData Source.Outputs[Error output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load\OData Source.Outputs[Error output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load\OData Source.Outputs[Error output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Load\OData Source.Outputs[Error output].Columns[ContentTypeID]"
+                      dataType="nText"
+                      lineageId="Package\Load\OData Source.Outputs[Error output].Columns[ContentTypeID]"
+                      name="ContentTypeID" />
+                    <outputColumn
+                      refId="Package\Load\OData Source.Outputs[Error output].Columns[Title]"
+                      dataType="nText"
+                      lineageId="Package\Load\OData Source.Outputs[Error output].Columns[Title]"
+                      name="Title" />
+                    <outputColumn
+                      refId="Package\Load\OData Source.Outputs[Error output].Columns[ComplianceAssetId]"
+                      dataType="nText"
+                      lineageId="Package\Load\OData Source.Outputs[Error output].Columns[ComplianceAssetId]"
+                      name="ComplianceAssetId" />
+                    <outputColumn
+                      refId="Package\Load\OData Source.Outputs[Error output].Columns[CustomerIDId]"
+                      dataType="i4"
+                      lineageId="Package\Load\OData Source.Outputs[Error output].Columns[CustomerIDId]"
+                      name="CustomerIDId" />
+                    <outputColumn
+                      refId="Package\Load\OData Source.Outputs[Error output].Columns[AddressIDId]"
+                      dataType="i4"
+                      lineageId="Package\Load\OData Source.Outputs[Error output].Columns[AddressIDId]"
+                      name="AddressIDId" />
+                    <outputColumn
+                      refId="Package\Load\OData Source.Outputs[Error output].Columns[Id]"
+                      dataType="i4"
+                      lineageId="Package\Load\OData Source.Outputs[Error output].Columns[Id]"
+                      name="Id" />
+                    <outputColumn
+                      refId="Package\Load\OData Source.Outputs[Error output].Columns[ContentType]"
+                      dataType="nText"
+                      lineageId="Package\Load\OData Source.Outputs[Error output].Columns[ContentType]"
+                      name="ContentType" />
+                    <outputColumn
+                      refId="Package\Load\OData Source.Outputs[Error output].Columns[Modified]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Load\OData Source.Outputs[Error output].Columns[Modified]"
+                      name="Modified" />
+                    <outputColumn
+                      refId="Package\Load\OData Source.Outputs[Error output].Columns[Created]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Load\OData Source.Outputs[Error output].Columns[Created]"
+                      name="Created" />
+                    <outputColumn
+                      refId="Package\Load\OData Source.Outputs[Error output].Columns[CreatedById]"
+                      dataType="i4"
+                      lineageId="Package\Load\OData Source.Outputs[Error output].Columns[CreatedById]"
+                      name="CreatedById" />
+                    <outputColumn
+                      refId="Package\Load\OData Source.Outputs[Error output].Columns[ModifiedById]"
+                      dataType="i4"
+                      lineageId="Package\Load\OData Source.Outputs[Error output].Columns[ModifiedById]"
+                      name="ModifiedById" />
+                    <outputColumn
+                      refId="Package\Load\OData Source.Outputs[Error output].Columns[Owshiddenversion]"
+                      dataType="i4"
+                      lineageId="Package\Load\OData Source.Outputs[Error output].Columns[Owshiddenversion]"
+                      name="Owshiddenversion" />
+                    <outputColumn
+                      refId="Package\Load\OData Source.Outputs[Error output].Columns[Version]"
+                      dataType="nText"
+                      lineageId="Package\Load\OData Source.Outputs[Error output].Columns[Version]"
+                      name="Version" />
+                    <outputColumn
+                      refId="Package\Load\OData Source.Outputs[Error output].Columns[Path]"
+                      dataType="nText"
+                      lineageId="Package\Load\OData Source.Outputs[Error output].Columns[Path]"
+                      name="Path" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[stgCustomerAddress]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[100.36.220.45,53000.MPSTGT.mbedada 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[100.36.220.45,53000.MPSTGT.mbedada 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[[CustomerIDId]]"
+                      cachedDataType="i4"
+                      cachedName="[CustomerIDId]"
+                      externalMetadataColumnId="Package\Load\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CustomerID]"
+                      lineageId="Package\Load\Derived Column 1.Outputs[Derived Column Output].Columns[[CustomerIDId]]" />
+                    <inputColumn
+                      refId="Package\Load\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[[AddressIDId]]"
+                      cachedDataType="i4"
+                      cachedName="[AddressIDId]"
+                      externalMetadataColumnId="Package\Load\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AddressID]"
+                      lineageId="Package\Load\Derived Column 1.Outputs[Derived Column Output].Columns[[AddressIDId]]" />
+                    <inputColumn
+                      refId="Package\Load\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[[Title]]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="[Title]"
+                      externalMetadataColumnId="Package\Load\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AddressType]"
+                      lineageId="Package\Load\Derived Column 1.Outputs[Derived Column Output].Columns[[Title]]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CustomerID]"
+                      dataType="i4"
+                      name="CustomerID" />
+                    <externalMetadataColumn
+                      refId="Package\Load\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AddressID]"
+                      dataType="i4"
+                      name="AddressID" />
+                    <externalMetadataColumn
+                      refId="Package\Load\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AddressType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="AddressType" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Load\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load.Paths[Derived Column Output]"
+              endId="Package\Load\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\Load\Derived Column 1.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Load.Paths[Output]"
+              endId="Package\Load\Derived Column 1.Inputs[Derived Column Input]"
+              name="Output"
+              startId="Package\Load\OData Source.Outputs[Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Load1"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{2aa4f335-55a5-4ecb-bb1a-dacf05f60b22}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load1"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:EventHandlers>
+        <DTS:EventHandler
+          DTS:refId="Package\Load1.EventHandlers[OnError]"
+          DTS:CreationName="OnError"
+          DTS:DTSID="{D8D2FD83-B788-4229-A985-A02816804ED1}"
+          DTS:EventID="0"
+          DTS:EventName="OnError"
+          DTS:LocaleID="-1">
+          <DTS:Variables>
+            <DTS:Variable
+              DTS:CreationName=""
+              DTS:Description="The propagate property of the event"
+              DTS:DTSID="{A5415A24-44D6-44BA-B55C-6CCE5D4811D0}"
+              DTS:IncludeInDebugDump="6789"
+              DTS:Namespace="System"
+              DTS:ObjectName="Propagate">
+              <DTS:VariableValue
+                DTS:DataType="11">-1</DTS:VariableValue>
+            </DTS:Variable>
+          </DTS:Variables>
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\Load1.EventHandlers[OnError]\Execute SQL Task"
+              DTS:CreationName="Microsoft.ExecuteSQLTask"
+              DTS:Description="Execute SQL Task"
+              DTS:DTSID="{5E729E7E-748E-482C-96A4-090E886C6475}"
+              DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="Execute SQL Task">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <SQLTask:SqlTaskData
+                  SQLTask:Connection="{7957E356-5021-45CB-9E99-9960AFE4FF75}"
+                  SQLTask:SqlStmtSourceType="Variable"
+                  SQLTask:SqlStatementSource="User::VarLogError" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="0"
+                    SQLTask:DtsVariableName="System::PackageID"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="72"
+                    SQLTask:ParameterSize="-1" />
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="1"
+                    SQLTask:DtsVariableName="System::PackageName"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="129"
+                    SQLTask:ParameterSize="-1" />
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="2"
+                    SQLTask:DtsVariableName="System::ErrorCode"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="21"
+                    SQLTask:ParameterSize="-1" />
+                  <SQLTask:ParameterBinding
+                    SQLTask:ParameterName="3"
+                    SQLTask:DtsVariableName="System::ErrorDescription"
+                    SQLTask:ParameterDirection="Input"
+                    SQLTask:DataType="129"
+                    SQLTask:ParameterSize="-1" />
+                </SQLTask:SqlTaskData>
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
+        </DTS:EventHandler>
+      </DTS:EventHandlers>
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load1\Derived Column 1"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column 1"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Load1\Derived Column 1.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load1\Derived Column 1.Inputs[Derived Column Input].Columns[CustomerIDId]"
+                      cachedDataType="i4"
+                      cachedName="CustomerIDId"
+                      lineageId="Package\Load1\OData Source.Outputs[Output].Columns[CustomerIDId]" />
+                    <inputColumn
+                      refId="Package\Load1\Derived Column 1.Inputs[Derived Column Input].Columns[AddressIDId]"
+                      cachedDataType="i4"
+                      cachedName="AddressIDId"
+                      lineageId="Package\Load1\OData Source.Outputs[Output].Columns[AddressIDId]" />
+                    <inputColumn
+                      refId="Package\Load1\Derived Column 1.Inputs[Derived Column Input].Columns[Title]"
+                      cachedDataType="nText"
+                      cachedName="Title"
+                      lineageId="Package\Load1\OData Source.Outputs[Output].Columns[Title]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load1\Derived Column 1.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Load1\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load1\Derived Column 1.Outputs[Derived Column Output].Columns[[CustomerIDId]]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Load1\Derived Column 1.Outputs[Derived Column Output].Columns[[CustomerIDId]]"
+                      name="[CustomerIDId]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_I4)#{Package\Load1\OData Source.Outputs[Output].Columns[CustomerIDId]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_I4)CustomerIDId</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load1\Derived Column 1.Outputs[Derived Column Output].Columns[[AddressIDId]]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Load1\Derived Column 1.Outputs[Derived Column Output].Columns[[AddressIDId]]"
+                      name="[AddressIDId]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_I4)#{Package\Load1\OData Source.Outputs[Output].Columns[AddressIDId]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_I4)AddressIDId</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load1\Derived Column 1.Outputs[Derived Column Output].Columns[[Title]]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Load1\Derived Column 1.Outputs[Derived Column Output].Columns[[Title]]"
+                      name="[Title]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_STR,50,1252)(DT_WSTR,50)#{Package\Load1\OData Source.Outputs[Output].Columns[Title]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_STR,50,1252)(DT_WSTR,50)Title</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Load1\Derived Column 1.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Load1\Derived Column 1.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load1\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load1\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load1\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load1\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load1\OData Source"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="OData Source Component;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Read data from OData services"
+              name="OData Source"
+              usesDispositions="true">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Name of the collection to be retrieved from the service."
+                  expressionType="Notify"
+                  name="CollectionName">CustomerAddress</property>
+                <property
+                  dataType="System.Int32"
+                  description="The default maximum length for a string that has no maxlength specified in the schema."
+                  name="DefaultStringLength">4000</property>
+                <property
+                  dataType="System.String"
+                  description="Query in the url. "
+                  expressionType="Notify"
+                  name="Query"></property>
+                <property
+                  dataType="System.String"
+                  description="Resource path of the collection to be retrieved from the service."
+                  expressionType="Notify"
+                  name="ResourcePath"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="When set to true, use the resource path as requested collection; otherwise, use the collection name."
+                  expressionType="Notify"
+                  name="UseResourcePath">false</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.OData</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load1\OData Source.Connections[Connection]"
+                  connectionManagerID="Package.ConnectionManagers[OData Source]"
+                  connectionManagerRefId="Package.ConnectionManagers[OData Source]"
+                  description="Connection to OData Service"
+                  name="Connection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load1\OData Source.Outputs[Output]"
+                  name="Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load1\OData Source.Outputs[Output].Columns[CustomerIDId]"
+                      dataType="i4"
+                      externalMetadataColumnId="Package\Load1\OData Source.Outputs[Output].ExternalColumns[CustomerIDId]"
+                      lineageId="Package\Load1\OData Source.Outputs[Output].Columns[CustomerIDId]"
+                      name="CustomerIDId" />
+                    <outputColumn
+                      refId="Package\Load1\OData Source.Outputs[Output].Columns[AddressIDId]"
+                      dataType="i4"
+                      externalMetadataColumnId="Package\Load1\OData Source.Outputs[Output].ExternalColumns[AddressIDId]"
+                      lineageId="Package\Load1\OData Source.Outputs[Output].Columns[AddressIDId]"
+                      name="AddressIDId" />
+                    <outputColumn
+                      refId="Package\Load1\OData Source.Outputs[Output].Columns[Title]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Load1\OData Source.Outputs[Output].ExternalColumns[Title]"
+                      lineageId="Package\Load1\OData Source.Outputs[Output].Columns[Title]"
+                      name="Title" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load1\OData Source.Outputs[Output].ExternalColumns[ContentTypeID]"
+                      dataType="nText"
+                      name="ContentTypeID" />
+                    <externalMetadataColumn
+                      refId="Package\Load1\OData Source.Outputs[Output].ExternalColumns[Title]"
+                      dataType="nText"
+                      name="Title" />
+                    <externalMetadataColumn
+                      refId="Package\Load1\OData Source.Outputs[Output].ExternalColumns[ComplianceAssetId]"
+                      dataType="nText"
+                      name="ComplianceAssetId" />
+                    <externalMetadataColumn
+                      refId="Package\Load1\OData Source.Outputs[Output].ExternalColumns[CustomerIDId]"
+                      dataType="i4"
+                      name="CustomerIDId" />
+                    <externalMetadataColumn
+                      refId="Package\Load1\OData Source.Outputs[Output].ExternalColumns[AddressIDId]"
+                      dataType="i4"
+                      name="AddressIDId" />
+                    <externalMetadataColumn
+                      refId="Package\Load1\OData Source.Outputs[Output].ExternalColumns[Id]"
+                      dataType="i4"
+                      name="Id" />
+                    <externalMetadataColumn
+                      refId="Package\Load1\OData Source.Outputs[Output].ExternalColumns[ContentType]"
+                      dataType="nText"
+                      name="ContentType" />
+                    <externalMetadataColumn
+                      refId="Package\Load1\OData Source.Outputs[Output].ExternalColumns[Modified]"
+                      dataType="dbTimeStamp"
+                      name="Modified" />
+                    <externalMetadataColumn
+                      refId="Package\Load1\OData Source.Outputs[Output].ExternalColumns[Created]"
+                      dataType="dbTimeStamp"
+                      name="Created" />
+                    <externalMetadataColumn
+                      refId="Package\Load1\OData Source.Outputs[Output].ExternalColumns[CreatedById]"
+                      dataType="i4"
+                      name="CreatedById" />
+                    <externalMetadataColumn
+                      refId="Package\Load1\OData Source.Outputs[Output].ExternalColumns[ModifiedById]"
+                      dataType="i4"
+                      name="ModifiedById" />
+                    <externalMetadataColumn
+                      refId="Package\Load1\OData Source.Outputs[Output].ExternalColumns[Owshiddenversion]"
+                      dataType="i4"
+                      name="Owshiddenversion" />
+                    <externalMetadataColumn
+                      refId="Package\Load1\OData Source.Outputs[Output].ExternalColumns[Version]"
+                      dataType="nText"
+                      name="Version" />
+                    <externalMetadataColumn
+                      refId="Package\Load1\OData Source.Outputs[Output].ExternalColumns[Path]"
+                      dataType="nText"
+                      name="Path" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load1\OData Source.Outputs[Error output]"
+                  isErrorOut="true"
+                  name="Error output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load1\OData Source.Outputs[Error output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load1\OData Source.Outputs[Error output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load1\OData Source.Outputs[Error output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load1\OData Source.Outputs[Error output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Load1\OData Source.Outputs[Error output].Columns[ContentTypeID]"
+                      dataType="nText"
+                      lineageId="Package\Load1\OData Source.Outputs[Error output].Columns[ContentTypeID]"
+                      name="ContentTypeID" />
+                    <outputColumn
+                      refId="Package\Load1\OData Source.Outputs[Error output].Columns[Title]"
+                      dataType="nText"
+                      lineageId="Package\Load1\OData Source.Outputs[Error output].Columns[Title]"
+                      name="Title" />
+                    <outputColumn
+                      refId="Package\Load1\OData Source.Outputs[Error output].Columns[ComplianceAssetId]"
+                      dataType="nText"
+                      lineageId="Package\Load1\OData Source.Outputs[Error output].Columns[ComplianceAssetId]"
+                      name="ComplianceAssetId" />
+                    <outputColumn
+                      refId="Package\Load1\OData Source.Outputs[Error output].Columns[CustomerIDId]"
+                      dataType="i4"
+                      lineageId="Package\Load1\OData Source.Outputs[Error output].Columns[CustomerIDId]"
+                      name="CustomerIDId" />
+                    <outputColumn
+                      refId="Package\Load1\OData Source.Outputs[Error output].Columns[AddressIDId]"
+                      dataType="i4"
+                      lineageId="Package\Load1\OData Source.Outputs[Error output].Columns[AddressIDId]"
+                      name="AddressIDId" />
+                    <outputColumn
+                      refId="Package\Load1\OData Source.Outputs[Error output].Columns[Id]"
+                      dataType="i4"
+                      lineageId="Package\Load1\OData Source.Outputs[Error output].Columns[Id]"
+                      name="Id" />
+                    <outputColumn
+                      refId="Package\Load1\OData Source.Outputs[Error output].Columns[ContentType]"
+                      dataType="nText"
+                      lineageId="Package\Load1\OData Source.Outputs[Error output].Columns[ContentType]"
+                      name="ContentType" />
+                    <outputColumn
+                      refId="Package\Load1\OData Source.Outputs[Error output].Columns[Modified]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Load1\OData Source.Outputs[Error output].Columns[Modified]"
+                      name="Modified" />
+                    <outputColumn
+                      refId="Package\Load1\OData Source.Outputs[Error output].Columns[Created]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Load1\OData Source.Outputs[Error output].Columns[Created]"
+                      name="Created" />
+                    <outputColumn
+                      refId="Package\Load1\OData Source.Outputs[Error output].Columns[CreatedById]"
+                      dataType="i4"
+                      lineageId="Package\Load1\OData Source.Outputs[Error output].Columns[CreatedById]"
+                      name="CreatedById" />
+                    <outputColumn
+                      refId="Package\Load1\OData Source.Outputs[Error output].Columns[ModifiedById]"
+                      dataType="i4"
+                      lineageId="Package\Load1\OData Source.Outputs[Error output].Columns[ModifiedById]"
+                      name="ModifiedById" />
+                    <outputColumn
+                      refId="Package\Load1\OData Source.Outputs[Error output].Columns[Owshiddenversion]"
+                      dataType="i4"
+                      lineageId="Package\Load1\OData Source.Outputs[Error output].Columns[Owshiddenversion]"
+                      name="Owshiddenversion" />
+                    <outputColumn
+                      refId="Package\Load1\OData Source.Outputs[Error output].Columns[Version]"
+                      dataType="nText"
+                      lineageId="Package\Load1\OData Source.Outputs[Error output].Columns[Version]"
+                      name="Version" />
+                    <outputColumn
+                      refId="Package\Load1\OData Source.Outputs[Error output].Columns[Path]"
+                      dataType="nText"
+                      lineageId="Package\Load1\OData Source.Outputs[Error output].Columns[Path]"
+                      name="Path" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load1\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[stgCustomerAddress]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load1\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[100.36.220.45,53000.MPSTGT.mbedada 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[100.36.220.45,53000.MPSTGT.mbedada 1]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load1\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load1\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[[CustomerIDId]]"
+                      cachedDataType="i4"
+                      cachedName="[CustomerIDId]"
+                      externalMetadataColumnId="Package\Load1\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CustomerID]"
+                      lineageId="Package\Load1\Derived Column 1.Outputs[Derived Column Output].Columns[[CustomerIDId]]" />
+                    <inputColumn
+                      refId="Package\Load1\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[[AddressIDId]]"
+                      cachedDataType="i4"
+                      cachedName="[AddressIDId]"
+                      externalMetadataColumnId="Package\Load1\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AddressID]"
+                      lineageId="Package\Load1\Derived Column 1.Outputs[Derived Column Output].Columns[[AddressIDId]]" />
+                    <inputColumn
+                      refId="Package\Load1\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[[Title]]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="[Title]"
+                      externalMetadataColumnId="Package\Load1\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AddressType]"
+                      lineageId="Package\Load1\Derived Column 1.Outputs[Derived Column Output].Columns[[Title]]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load1\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CustomerID]"
+                      dataType="i4"
+                      name="CustomerID" />
+                    <externalMetadataColumn
+                      refId="Package\Load1\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AddressID]"
+                      dataType="i4"
+                      name="AddressID" />
+                    <externalMetadataColumn
+                      refId="Package\Load1\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AddressType]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="AddressType" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load1\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Load1\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load1\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load1\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load1\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load1\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load1.Paths[Derived Column Output]"
+              endId="Package\Load1\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\Load1\Derived Column 1.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Load1.Paths[Output]"
+              endId="Package\Load1\Derived Column 1.Inputs[Derived Column Input]"
+              name="Output"
+              startId="Package\Load1\OData Source.Outputs[Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Pkg_Part_LogPkgEnd"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{754C12E1-195D-402F-AE4E-D3E9B407EA97}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Pkg_Part_LogPkgEnd"
+      DTS:ThreadHint="0">
+      <DTS:Variables>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:DTSID="{02E0BFE4-9317-4900-9617-0A97D58CDB39}"
+          DTS:EvaluateAsExpression="True"
+          DTS:Expression="&quot;DECLARE @packageID uniqueidentifier,&#xA;        @packageName varchar(100),&#xA;&#x9;&#x9;@sourceName varchar(100),&#xA;&#x9;&#x9;@startTime datetime,&#xA;&#x9;&#x9;@status char(1),&#xA;&#x9;&#x9;@EndTime datetime,&#xA;&#x9;&#x9;@RunBy varchar(100),&#xA;&#x9;&#x9;@RunDate datetime&#xA;&#xA;set @packageID=?&#xA;set @packageName =?&#xA;set @sourceName ='Sharepoint'&#xA;set @startTime = GETDATE()&#xA;set @status ='C'&#xA;set @EndTime=GETDATE()&#xA;set @RunBy = SUSER_NAME ()&#xA;set @RunDate =GETDATE()&#xA;&#xA;INSERT INTO SSIS_Log.[dbo].[PackageLog]&#xA;(&#xA;PackageID,&#xA;PackageName,&#xA;SourceName,&#xA;StartTime,&#xA;Status,&#xA;EndTime,&#xA;RunDate,&#xA;RunBy&#xA;)&#xA;VALUES&#xA;(&#xA;@packageID,&#xA;@packageName,&#xA;@sourceName ,&#xA;@startTime,&#xA;@status ,&#xA;@EndTime,&#xA;@RunBy,&#xA;@RunDate &#xA;)&quot;"
+          DTS:IncludeInDebugDump="2345"
+          DTS:Namespace="User"
+          DTS:ObjectName="VarEnd">
+          <DTS:VariableValue
+            DTS:DataType="8">DECLARE @packageID uniqueidentifier,
+        @packageName varchar(100),
+		@sourceName varchar(100),
+		@startTime datetime,
+		@status char(1),
+		@EndTime datetime,
+		@RunBy varchar(100),
+		@RunDate datetime
+
+set @packageID=?
+set @packageName =?
+set @sourceName ='Sharepoint'
+set @startTime = GETDATE()
+set @status ='C'
+set @EndTime=GETDATE()
+set @RunBy = SUSER_NAME ()
+set @RunDate =GETDATE()
+
+INSERT INTO SSIS_Log.[dbo].[PackageLog]
+(
+PackageID,
+PackageName,
+SourceName,
+StartTime,
+Status,
+EndTime,
+RunDate,
+RunBy
+)
+VALUES
+(
+@packageID,
+@packageName,
+@sourceName ,
+@startTime,
+@status ,
+@EndTime,
+@RunBy,
+@RunDate 
+)</DTS:VariableValue>
+        </DTS:Variable>
+      </DTS:Variables>
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{8C419F49-4618-4CC0-B651-F83B828A9C2A}"
+          SQLTask:SqlStmtSourceType="Variable"
+          SQLTask:SqlStatementSource="User::VarEnd" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="System::PackageID"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="72"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="1"
+            SQLTask:DtsVariableName="System::PackageName"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Pkg_Part_LogPkgStart"
+      DTS:CreationName="SSIS.ReplacementTask"
+      DTS:DTSID="{9142614F-9956-4F5B-A507-A7F46BA5A649}"
+      DTS:ExecutableType="SSIS.ReplacementTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Pkg_Part_LogPkgStart">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <PackagePart:InstanceData xmlns:PackagePart="www.microsoft.com/SqlServer/Dts/PackagePart"
+          PackagePart:VersionGUID="{0158C8B1-83E4-4ED0-970F-E14AD8122988}">
+          <PackagePart:Connections>
+            <PackagePart:Connection
+              PackagePart:ID="{5F989698-3684-41AB-8FDF-43E8C350BF87}"
+              PackagePart:Name="(PackagePart)100.36.220.45,53000.MPSTGT.mbedada"
+              PackagePart:OrigID="{B4FCEC81-A5BC-4114-93D9-F8D514688065}"
+              PackagePart:OrigName="100.36.220.45,53000.MPSTGT.mbedada">
+              <PackagePart:Configurations />
+            </PackagePart:Connection>
+            <PackagePart:Connection
+              PackagePart:ID="{15492AAE-C9EA-492B-B4A9-7779927CFC9F}"
+              PackagePart:Name="(PackagePart)100 36 220 45,53000 MPSTGT mbedada 1"
+              PackagePart:OrigID="{EC06692A-5F0C-486D-876C-6325FCEA859E}"
+              PackagePart:OrigName="100.36.220.45,53000.MPSTGT.mbedada 1">
+              <PackagePart:Configurations />
+            </PackagePart:Connection>
+          </PackagePart:Connections>
+          <PackagePart:Configurations />
+        </PackagePart:InstanceData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{EEB00733-AC2B-4AD6-BE3D-1DBEE359FFC5}"
+      DTS:EvalOp="4"
+      DTS:Expression="@[User::VarValue]==0"
+      DTS:From="Package\CheckData_Customer_Address"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Load1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{2CAD19F7-AC89-45DB-9C6E-9B8A4B7FA668}"
+      DTS:From="Package\Delete"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Load" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{CAF94ECA-2B22-403D-8A8D-A683218C0BED}"
+      DTS:EvalOp="4"
+      DTS:Expression="@[User::VarValue]==1"
+      DTS:From="Package\CheckData_Customer_Address"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\Delete" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[{27597072-01E6-46CA-9974-71A0C8BE1ED3\}]"
+      DTS:CreationName=""
+      DTS:DTSID="{8055E8FB-EACF-4DAE-9275-CC5D03FB76FC}"
+      DTS:From="Package\Load1"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="{27597072-01E6-46CA-9974-71A0C8BE1ED3}"
+      DTS:To="Package\Pkg_Part_LogPkgEnd" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[{8C12B726-9A1C-4E77-94CD-D6F5DB93BC2E\}]"
+      DTS:CreationName=""
+      DTS:DTSID="{564C1EDB-20C6-4C81-AD23-DEB13F267934}"
+      DTS:From="Package\Load"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="{8C12B726-9A1C-4E77-94CD-D6F5DB93BC2E}"
+      DTS:To="Package\Pkg_Part_LogPkgEnd" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[{F3E61FCE-5562-4A3D-923F-FF71333E1352\}]"
+      DTS:CreationName=""
+      DTS:DTSID="{4F6131F6-83EF-4F49-AE91-6832354BF603}"
+      DTS:From="Package\Pkg_Part_LogPkgStart"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="{F3E61FCE-5562-4A3D-923F-FF71333E1352}"
+      DTS:To="Package\CheckData_Customer_Address" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="223,42"
+          Id="Package\CheckData_Customer_Address"
+          TopLeft="5.5,107.5" />
+        <NodeLayout
+          Size="109,42"
+          Id="Package\Delete"
+          TopLeft="178.5,209.5" />
+        <NodeLayout
+          Size="102,42"
+          Id="Package\Load"
+          TopLeft="231,311.5" />
+        <NodeLayout
+          Size="107,42"
+          Id="Package\Load1"
+          TopLeft="63.5,311.5" />
+        <NodeLayout
+          Size="179,42"
+          Id="Package\Pkg_Part_LogPkgEnd"
+          TopLeft="192.5,413.5" />
+        <NodeLayout
+          Size="183,42"
+          Id="Package\Pkg_Part_LogPkgStart"
+          TopLeft="25.5,5.5" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="81.1666666666667,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="35.8333333333334,162"
+              Start="0,0"
+              End="35.8333333333334,154.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,61.4924309884239" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,61.4924309884239"
+                    Point2="0,65.4924309884239"
+                    Point3="4,65.4924309884239" />
+                  <mssgle:LineSegment
+                    End="31.8333333333334,65.4924309884239" />
+                  <mssgle:CubicBezierSegment
+                    Point1="31.8333333333334,65.4924309884239"
+                    Point2="35.8333333333334,65.4924309884239"
+                    Point3="35.8333333333334,69.4924309884239" />
+                  <mssgle:LineSegment
+                    End="35.8333333333334,154.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="9.91666666666669,70.4924309884239,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="233,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="49,60"
+              Start="0,0"
+              End="49,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26"
+                    Point2="0,30"
+                    Point3="4,30" />
+                  <mssgle:LineSegment
+                    End="45,30" />
+                  <mssgle:CubicBezierSegment
+                    Point1="45,30"
+                    Point2="49,30"
+                    Point3="49,34" />
+                  <mssgle:LineSegment
+                    End="49,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="152.833333333333,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="80.1666666666667,60"
+              Start="0,0"
+              End="80.1666666666667,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.2564559216385" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.2564559216385"
+                    Point2="0,24.2564559216385"
+                    Point3="4,24.2564559216385" />
+                  <mssgle:LineSegment
+                    End="76.1666666666667,24.2564559216385" />
+                  <mssgle:CubicBezierSegment
+                    Point1="76.1666666666667,24.2564559216385"
+                    Point2="80.1666666666667,24.2564559216385"
+                    Point3="80.1666666666667,28.2564559216385" />
+                  <mssgle:LineSegment
+                    End="80.1666666666667,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="32.0833333333334,29.2564559216385,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[{8C12B726-9A1C-4E77-94CD-D6F5DB93BC2E\}]"
+          TopLeft="282,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="28.5,60"
+              Start="0,0"
+              End="28.5,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.6810631229236" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.6810631229236"
+                    Point2="0,35.6810631229236"
+                    Point3="4,35.6810631229236" />
+                  <mssgle:LineSegment
+                    End="24.5,35.6810631229236" />
+                  <mssgle:CubicBezierSegment
+                    Point1="24.5,35.6810631229236"
+                    Point2="28.5,35.6810631229236"
+                    Point3="28.5,39.6810631229236" />
+                  <mssgle:LineSegment
+                    End="28.5,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[{27597072-01E6-46CA-9974-71A0C8BE1ED3\}]"
+          TopLeft="117,353.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="136.5,60"
+              Start="0,0"
+              End="136.5,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,31.6810631229236" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,31.6810631229236"
+                    Point2="0,35.6810631229236"
+                    Point3="4,35.6810631229236" />
+                  <mssgle:LineSegment
+                    End="132.5,35.6810631229236" />
+                  <mssgle:CubicBezierSegment
+                    Point1="132.5,35.6810631229236"
+                    Point2="136.5,35.6810631229236"
+                    Point3="136.5,39.6810631229236" />
+                  <mssgle:LineSegment
+                    End="136.5,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[{F3E61FCE-5562-4A3D-923F-FF71333E1352\}]"
+          TopLeft="117,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <DtsEventHandler
+    design-time-name="Package\CheckData_Customer_Address.EventHandlers[OnError]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="163,42"
+          Id="Package\CheckData_Customer_Address.EventHandlers[OnError]\Execute SQL Task"
+          TopLeft="5.5,5.5" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
+  <DtsEventHandler
+    design-time-name="Package\Delete.EventHandlers[OnError]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Delete.EventHandlers[OnError]\Execute SQL Task"
+          TopLeft="146.5,59.5" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
+  <TaskHost
+    design-time-name="Package\Load">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="144,42"
+          Id="Package\Load\OData Source"
+          TopLeft="19,5.5" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Load\Derived Column 1"
+          TopLeft="9.50000000000003,107.5" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Load\OLE DB Destination"
+          TopLeft="5.50000000000003,209.5" />
+        <EdgeLayout
+          Id="Package\Load.Paths[Output]"
+          TopLeft="91,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load.Paths[Derived Column Output]"
+          TopLeft="91,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <DtsEventHandler
+    design-time-name="Package\Load.EventHandlers[OnError]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Load.EventHandlers[OnError]\Execute SQL Task"
+          TopLeft="5.5,5.5" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
+  <TaskHost
+    design-time-name="Package\Load1">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="144,42"
+          Id="Package\Load1\OData Source"
+          TopLeft="19,5.5" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Load1\Derived Column 1"
+          TopLeft="9.50000000000003,107.5" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Load1\OLE DB Destination"
+          TopLeft="5.50000000000003,209.5" />
+        <EdgeLayout
+          Id="Package\Load1.Paths[Output]"
+          TopLeft="91,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load1.Paths[Derived Column Output]"
+          TopLeft="91,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <DtsEventHandler
+    design-time-name="Package\Load1.EventHandlers[OnError]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Load1.EventHandlers[OnError]\Execute SQL Task"
+          TopLeft="5.5,5.5" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

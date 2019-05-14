@@ -1,0 +1,1587 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/28/2019 10:59:20 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-9HA8H8CP"
+  DTS:CreatorName="LAPTOP-9HA8H8CP\meti"
+  DTS:DTSID="{C3A028B3-69EC-4CDC-9697-4D2DF895347D}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.0900.40"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="ProductModelG"
+  DTS:PackageType="5"
+  DTS:VersionBuild="18"
+  DTS:VersionGUID="{E91D816D-638E-402D-A3DF-4CD3DCA783F3}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[100.36.220.45,53000.MPSTGT.mbedada]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{D31D2E6E-101F-4269-AE9D-F734C40A6FDC}"
+      DTS:ObjectName="100.36.220.45,53000.MPSTGT.mbedada">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=100.36.220.45,53000;User ID=mbedada;Initial Catalog=MPSTGT;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVTDXhtPtXkulx/L4OZ/jzwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADQeYMcpxykkyl5vQUdVZ9NmLhX0ML7kHwoqFK8VuQ53QAAAAAOgAAAAAIAACAAAABPvpdRQzXDxx7P8+VwfVmQ2uLKIdBaSrWKFTVELxBChxAAAAB/D6SyzLWmVsF8bRoZey2cQAAAALOZ8l1utLDhiqcDUjinYyx94y300uKgaid7oPjFpv4UpmE4d868Z9EgdWcB5+CwjrURMIr4T9tNpFg50TJqPKM</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[OData Source]"
+      DTS:CreationName="ODATA"
+      DTS:DTSID="{3E4C17BD-D854-43B0-AC86-9EB86D5CF9C9}"
+      DTS:ObjectName="OData Source">
+      <DTS:ObjectData>
+        <ODataConnectionManager
+          UserName="sharepoint@dunatk.com"
+          Url="https://dunatkcom.sharepoint.com/sites/masterpieces/_vti_bin/listdata.svc"
+          ConnectionString="Service Document Url=https://dunatkcom.sharepoint.com/sites/masterpieces/_vti_bin/listdata.svc;Include Atom Elements=Auto;Include Expanded Entities=False;Integrated Security=False;Cookie=&quot;SPOIDCRL=77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48U1A+VjUsMGguZnxtZW1iZXJzaGlwfDEwMDMyMDAwNDUzOWU4OWZAbGl2ZS5jb20sMCMuZnxtZW1iZXJzaGlwfHNoYXJlcG9pbnRAZHVuYXRrLmNvbSwxMzIwMTA0OTk5MTAwMDAwMDAsMTMyMDA0Mjc0NjEwMDAwMDAwLDEzMjAxMTM2MzkyMDgzMDAyNywwLjAuMC4wLDQsODVkZGY3ZTktODA2OC00YmI2LTg5NzktNDQ3NjE0NDJlMzlhLCwsYmFkNWQ3OWUtNDBiNi0wMDAwLTM4MjctMWJhYzA3NDlmZmUxLGJhZDVkNzllLTQwYjYtMDAwMC0zODI3LTFiYWMwNzQ5ZmZlMSwsMCwwLDAsLGwxbVE0Q2RQOFhGZ3FiMnhDYnBoWUdEWUhZc3dFR3JSTnZ4Wnp4bGZtS1BYZXhqRDZQTUd5L0xzWGZES2kxMGkwSVpTQ0NuWXIzUlVHSmxOQnlsMk1Rb3RZbmxGYUxybTJLZ2ZmOWFXMkZsM2FWU1lKcjJ5VVlXd1Vwb3RPWnpaR1AxU0k4TEprOE1XckZMa2l6K2lrUDE2MHJCL2R6RlVENE50RzdlR3YrcUxDTVBGaDhCU1UzL08vQ3hTNDZYekhMVzVEYVdNMllydzgxQjFIcElGTFdqR2dTU09US2RlaHBNbkZtV0lMYUZCQzRxS25tMXhHOWJtZGt0c1hPWVRkekRLZ2FBdzdIQlBOeXJhVnFuK0haL24rLzR5Zy9ad2N3WldyWk05N2ZmRVUzUXZPOXlodlpxNHZJVGtIY1NqT2VwdzJyTEhrWnFpYVNxckxnSUNrZz09PC9TUD4=&quot;;User ID=sharepoint@dunatk.com;Persist Security Info=False;Time Out=600;Schema Sample Size=25;Retry Count=5;Retry Sleep=100;Keep Alive=False;Max Received Message Size=4398046511104"
+          MicrosoftOnlineServicesAuth="True"
+          AuthType="MicrosoftOnlineService">
+          <Password
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVTDXhtPtXkulx/L4OZ/jzwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABqeLNvy1BU/A54WtB27GQ7V8z0xMQ1TsnldMZDGFK2mQAAAAAOgAAAAAIAACAAAAAafeqG0zXTTbnIkCnhXSWZQtd1Km2wRz7b6grV9xw0IiAAAADgL1WtedbBDsI7GQk84lWsK9uo6jTkFN0MioHA/sReNkAAAAA+AW8DOyXe5DzE1PobyYyit7oeQ2GIUEDNsnXE5cFqpPyBW1t0C0LnrX5VMPMrOZcOq2n+Vh1R/cXbPFBuQzn0</Password>
+        </ODataConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{1026706E-28E9-482B-AE2B-AF8F7852345E}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot; delete [dbo].[stgProductModel]&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="VarDelete">
+      <DTS:VariableValue
+        DTS:DataType="8"> delete [dbo].[stgProductModel]</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{3546D25E-3B83-4CA8-B172-C0453184521D}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;If Exists (Select 1 &#xA;  from [dbo].[stgProductModel]  )&#xA;  begin select 1 end else begin select 0 end&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="VarEvaluate">
+      <DTS:VariableValue
+        DTS:DataType="8">If Exists (Select 1 
+  from [dbo].[stgProductModel]  )
+  begin select 1 end else begin select 0 end</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{69AA3A27-3038-4D8C-B814-580A0BFC6C27}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="VarRowCount">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{BB5CA589-FD91-4339-9A6F-5E856DDA8B3F}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="VarValue">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Address_DataFlow"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{43e28dc0-a97c-4831-bee0-f6d2230eb57b}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Address_DataFlow">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Address_DataFlow\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Address_DataFlow\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Address_DataFlow\Derived Column.Inputs[Derived Column Input].Columns[ProductModelID]"
+                      cachedDataType="r8"
+                      cachedName="ProductModelID"
+                      lineageId="Package\Address_DataFlow\OData Source.Outputs[Output].Columns[ProductModelID]" />
+                    <inputColumn
+                      refId="Package\Address_DataFlow\Derived Column.Inputs[Derived Column Input].Columns[ProductModelName]"
+                      cachedDataType="nText"
+                      cachedName="ProductModelName"
+                      lineageId="Package\Address_DataFlow\OData Source.Outputs[Output].Columns[ProductModelName]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Address_DataFlow\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Address_DataFlow\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Address_DataFlow\Derived Column.Outputs[Derived Column Output].Columns[[ProductModelID]]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Address_DataFlow\Derived Column.Outputs[Derived Column Output].Columns[[ProductModelID]]"
+                      name="[ProductModelID]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_I4)(DT_I8)#{Package\Address_DataFlow\OData Source.Outputs[Output].Columns[ProductModelID]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_I4)(DT_I8)ProductModelID</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Address_DataFlow\Derived Column.Outputs[Derived Column Output].Columns[[ProductModelName]]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Address_DataFlow\Derived Column.Outputs[Derived Column Output].Columns[[ProductModelName]]"
+                      name="[ProductModelName]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_STR,50,1252)(DT_WSTR,50)#{Package\Address_DataFlow\OData Source.Outputs[Output].Columns[ProductModelName]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_STR,50,1252)(DT_WSTR,50)ProductModelName</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Address_DataFlow\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Address_DataFlow\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Address_DataFlow\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Address_DataFlow\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Address_DataFlow\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Address_DataFlow\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Address_DataFlow\OData Source"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="OData Source Component;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Read data from OData services"
+              name="OData Source"
+              usesDispositions="true">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Name of the collection to be retrieved from the service."
+                  expressionType="Notify"
+                  name="CollectionName">ProductModel</property>
+                <property
+                  dataType="System.Int32"
+                  description="The default maximum length for a string that has no maxlength specified in the schema."
+                  name="DefaultStringLength">4000</property>
+                <property
+                  dataType="System.String"
+                  description="Query in the url. "
+                  expressionType="Notify"
+                  name="Query"></property>
+                <property
+                  dataType="System.String"
+                  description="Resource path of the collection to be retrieved from the service."
+                  expressionType="Notify"
+                  name="ResourcePath"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="When set to true, use the resource path as requested collection; otherwise, use the collection name."
+                  expressionType="Notify"
+                  name="UseResourcePath">false</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.OData</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Address_DataFlow\OData Source.Connections[Connection]"
+                  connectionManagerID="Package.ConnectionManagers[OData Source]"
+                  connectionManagerRefId="Package.ConnectionManagers[OData Source]"
+                  description="Connection to OData Service"
+                  name="Connection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Address_DataFlow\OData Source.Outputs[Output]"
+                  name="Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Output].Columns[ProductModelID]"
+                      dataType="r8"
+                      externalMetadataColumnId="Package\Address_DataFlow\OData Source.Outputs[Output].ExternalColumns[ProductModelID]"
+                      lineageId="Package\Address_DataFlow\OData Source.Outputs[Output].Columns[ProductModelID]"
+                      name="ProductModelID" />
+                    <outputColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Output].Columns[ProductModelName]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Address_DataFlow\OData Source.Outputs[Output].ExternalColumns[ProductModelName]"
+                      lineageId="Package\Address_DataFlow\OData Source.Outputs[Output].Columns[ProductModelName]"
+                      name="ProductModelName" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Output].ExternalColumns[ContentTypeID]"
+                      dataType="nText"
+                      name="ContentTypeID" />
+                    <externalMetadataColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Output].ExternalColumns[Title]"
+                      dataType="nText"
+                      name="Title" />
+                    <externalMetadataColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Output].ExternalColumns[ComplianceAssetId]"
+                      dataType="nText"
+                      name="ComplianceAssetId" />
+                    <externalMetadataColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Output].ExternalColumns[ProductModelID]"
+                      dataType="r8"
+                      name="ProductModelID" />
+                    <externalMetadataColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Output].ExternalColumns[ProductModelName]"
+                      dataType="nText"
+                      name="ProductModelName" />
+                    <externalMetadataColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Output].ExternalColumns[Id]"
+                      dataType="i4"
+                      name="Id" />
+                    <externalMetadataColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Output].ExternalColumns[ContentType]"
+                      dataType="nText"
+                      name="ContentType" />
+                    <externalMetadataColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Output].ExternalColumns[Modified]"
+                      dataType="dbTimeStamp"
+                      name="Modified" />
+                    <externalMetadataColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Output].ExternalColumns[Created]"
+                      dataType="dbTimeStamp"
+                      name="Created" />
+                    <externalMetadataColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Output].ExternalColumns[CreatedById]"
+                      dataType="i4"
+                      name="CreatedById" />
+                    <externalMetadataColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Output].ExternalColumns[ModifiedById]"
+                      dataType="i4"
+                      name="ModifiedById" />
+                    <externalMetadataColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Output].ExternalColumns[Owshiddenversion]"
+                      dataType="i4"
+                      name="Owshiddenversion" />
+                    <externalMetadataColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Output].ExternalColumns[Version]"
+                      dataType="nText"
+                      name="Version" />
+                    <externalMetadataColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Output].ExternalColumns[Path]"
+                      dataType="nText"
+                      name="Path" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Address_DataFlow\OData Source.Outputs[Error output]"
+                  isErrorOut="true"
+                  name="Error output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[ContentTypeID]"
+                      dataType="nText"
+                      lineageId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[ContentTypeID]"
+                      name="ContentTypeID" />
+                    <outputColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[Title]"
+                      dataType="nText"
+                      lineageId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[Title]"
+                      name="Title" />
+                    <outputColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[ComplianceAssetId]"
+                      dataType="nText"
+                      lineageId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[ComplianceAssetId]"
+                      name="ComplianceAssetId" />
+                    <outputColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[ProductModelID]"
+                      dataType="r8"
+                      lineageId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[ProductModelID]"
+                      name="ProductModelID" />
+                    <outputColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[ProductModelName]"
+                      dataType="nText"
+                      lineageId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[ProductModelName]"
+                      name="ProductModelName" />
+                    <outputColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[Id]"
+                      dataType="i4"
+                      lineageId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[Id]"
+                      name="Id" />
+                    <outputColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[ContentType]"
+                      dataType="nText"
+                      lineageId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[ContentType]"
+                      name="ContentType" />
+                    <outputColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[Modified]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[Modified]"
+                      name="Modified" />
+                    <outputColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[Created]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[Created]"
+                      name="Created" />
+                    <outputColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[CreatedById]"
+                      dataType="i4"
+                      lineageId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[CreatedById]"
+                      name="CreatedById" />
+                    <outputColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[ModifiedById]"
+                      dataType="i4"
+                      lineageId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[ModifiedById]"
+                      name="ModifiedById" />
+                    <outputColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[Owshiddenversion]"
+                      dataType="i4"
+                      lineageId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[Owshiddenversion]"
+                      name="Owshiddenversion" />
+                    <outputColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[Version]"
+                      dataType="nText"
+                      lineageId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[Version]"
+                      name="Version" />
+                    <outputColumn
+                      refId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[Path]"
+                      dataType="nText"
+                      lineageId="Package\Address_DataFlow\OData Source.Outputs[Error output].Columns[Path]"
+                      name="Path" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Address_DataFlow\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[stgProductModel]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Address_DataFlow\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[100.36.220.45,53000.MPSTGT.mbedada]"
+                  connectionManagerRefId="Package.ConnectionManagers[100.36.220.45,53000.MPSTGT.mbedada]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Address_DataFlow\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Address_DataFlow\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[[ProductModelName]]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="[ProductModelName]"
+                      externalMetadataColumnId="Package\Address_DataFlow\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                      lineageId="Package\Address_DataFlow\Derived Column.Outputs[Derived Column Output].Columns[[ProductModelName]]" />
+                    <inputColumn
+                      refId="Package\Address_DataFlow\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[[ProductModelID]]"
+                      cachedDataType="i4"
+                      cachedName="[ProductModelID]"
+                      externalMetadataColumnId="Package\Address_DataFlow\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProductModelID]"
+                      lineageId="Package\Address_DataFlow\Derived Column.Outputs[Derived Column Output].Columns[[ProductModelID]]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Address_DataFlow\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProductModelID]"
+                      dataType="i4"
+                      name="ProductModelID" />
+                    <externalMetadataColumn
+                      refId="Package\Address_DataFlow\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Name" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Address_DataFlow\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Address_DataFlow\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Address_DataFlow\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Address_DataFlow\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Address_DataFlow\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Address_DataFlow\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Address_DataFlow\Row Count"
+              componentClassID="Microsoft.RowCount"
+              contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+              name="Row Count">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable to hold the row count."
+                  name="VariableName">User::VarRowCount</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Address_DataFlow\Row Count.Inputs[Row Count Input 1]"
+                  hasSideEffects="true"
+                  name="Row Count Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Address_DataFlow\Row Count.Outputs[Row Count Output 1]"
+                  name="Row Count Output 1"
+                  synchronousInputId="Package\Address_DataFlow\Row Count.Inputs[Row Count Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Address_DataFlow.Paths[Derived Column Output]"
+              endId="Package\Address_DataFlow\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\Address_DataFlow\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Address_DataFlow.Paths[Output]"
+              endId="Package\Address_DataFlow\Row Count.Inputs[Row Count Input 1]"
+              name="Output"
+              startId="Package\Address_DataFlow\OData Source.Outputs[Output]" />
+            <path
+              refId="Package\Address_DataFlow.Paths[Row Count Output 1]"
+              endId="Package\Address_DataFlow\Derived Column.Inputs[Derived Column Input]"
+              name="Row Count Output 1"
+              startId="Package\Address_DataFlow\Row Count.Outputs[Row Count Output 1]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{9806958e-d72d-41cc-891c-981cc6f34352}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[ProductModelID]"
+                      cachedDataType="r8"
+                      cachedName="ProductModelID"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[ProductModelID]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input].Columns[ProductModelName]"
+                      cachedDataType="nText"
+                      cachedName="ProductModelName"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[ProductModelName]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[[ProductModelID]]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[[ProductModelID]]"
+                      name="[ProductModelID]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_I4)(DT_I8)#{Package\Data Flow Task\OData Source.Outputs[Output].Columns[ProductModelID]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_I4)(DT_I8)ProductModelID</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[[ProductModelName]]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="50"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[[ProductModelName]]"
+                      name="[ProductModelName]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_STR,50,1252)(DT_WSTR,50)#{Package\Data Flow Task\OData Source.Outputs[Output].Columns[ProductModelName]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_STR,50,1252)(DT_WSTR,50)ProductModelName</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\OData Source"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="OData Source Component;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Read data from OData services"
+              name="OData Source"
+              usesDispositions="true">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Name of the collection to be retrieved from the service."
+                  expressionType="Notify"
+                  name="CollectionName">ProductModel</property>
+                <property
+                  dataType="System.Int32"
+                  description="The default maximum length for a string that has no maxlength specified in the schema."
+                  name="DefaultStringLength">4000</property>
+                <property
+                  dataType="System.String"
+                  description="Query in the url. "
+                  expressionType="Notify"
+                  name="Query"></property>
+                <property
+                  dataType="System.String"
+                  description="Resource path of the collection to be retrieved from the service."
+                  expressionType="Notify"
+                  name="ResourcePath"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="When set to true, use the resource path as requested collection; otherwise, use the collection name."
+                  expressionType="Notify"
+                  name="UseResourcePath">false</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.OData</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\OData Source.Connections[Connection]"
+                  connectionManagerID="Package.ConnectionManagers[OData Source]"
+                  connectionManagerRefId="Package.ConnectionManagers[OData Source]"
+                  description="Connection to OData Service"
+                  name="Connection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\OData Source.Outputs[Output]"
+                  name="Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[ProductModelID]"
+                      dataType="r8"
+                      externalMetadataColumnId="Package\Data Flow Task\OData Source.Outputs[Output].ExternalColumns[ProductModelID]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[ProductModelID]"
+                      name="ProductModelID" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[ProductModelName]"
+                      dataType="nText"
+                      externalMetadataColumnId="Package\Data Flow Task\OData Source.Outputs[Output].ExternalColumns[ProductModelName]"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Output].Columns[ProductModelName]"
+                      name="ProductModelName" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Output].ExternalColumns[ContentTypeID]"
+                      dataType="nText"
+                      name="ContentTypeID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Output].ExternalColumns[Title]"
+                      dataType="nText"
+                      name="Title" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Output].ExternalColumns[ComplianceAssetId]"
+                      dataType="nText"
+                      name="ComplianceAssetId" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Output].ExternalColumns[ProductModelID]"
+                      dataType="r8"
+                      name="ProductModelID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Output].ExternalColumns[ProductModelName]"
+                      dataType="nText"
+                      name="ProductModelName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Output].ExternalColumns[Id]"
+                      dataType="i4"
+                      name="Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Output].ExternalColumns[ContentType]"
+                      dataType="nText"
+                      name="ContentType" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Output].ExternalColumns[Modified]"
+                      dataType="dbTimeStamp"
+                      name="Modified" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Output].ExternalColumns[Created]"
+                      dataType="dbTimeStamp"
+                      name="Created" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Output].ExternalColumns[CreatedById]"
+                      dataType="i4"
+                      name="CreatedById" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Output].ExternalColumns[ModifiedById]"
+                      dataType="i4"
+                      name="ModifiedById" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Output].ExternalColumns[Owshiddenversion]"
+                      dataType="i4"
+                      name="Owshiddenversion" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Output].ExternalColumns[Version]"
+                      dataType="nText"
+                      name="Version" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Output].ExternalColumns[Path]"
+                      dataType="nText"
+                      name="Path" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\OData Source.Outputs[Error output]"
+                  isErrorOut="true"
+                  name="Error output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[ContentTypeID]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[ContentTypeID]"
+                      name="ContentTypeID" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[Title]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[Title]"
+                      name="Title" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[ComplianceAssetId]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[ComplianceAssetId]"
+                      name="ComplianceAssetId" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[ProductModelID]"
+                      dataType="r8"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[ProductModelID]"
+                      name="ProductModelID" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[ProductModelName]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[ProductModelName]"
+                      name="ProductModelName" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[Id]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[Id]"
+                      name="Id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[ContentType]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[ContentType]"
+                      name="ContentType" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[Modified]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[Modified]"
+                      name="Modified" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[Created]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[Created]"
+                      name="Created" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[CreatedById]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[CreatedById]"
+                      name="CreatedById" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[ModifiedById]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[ModifiedById]"
+                      name="ModifiedById" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[Owshiddenversion]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[Owshiddenversion]"
+                      name="Owshiddenversion" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[Version]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[Version]"
+                      name="Version" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[Path]"
+                      dataType="nText"
+                      lineageId="Package\Data Flow Task\OData Source.Outputs[Error output].Columns[Path]"
+                      name="Path" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[stgProductModel]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[100.36.220.45,53000.MPSTGT.mbedada]"
+                  connectionManagerRefId="Package.ConnectionManagers[100.36.220.45,53000.MPSTGT.mbedada]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[[ProductModelName]]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="[ProductModelName]"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[[ProductModelName]]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[[ProductModelID]]"
+                      cachedDataType="i4"
+                      cachedName="[ProductModelID]"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProductModelID]"
+                      lineageId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output].Columns[[ProductModelID]]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProductModelID]"
+                      dataType="i4"
+                      name="ProductModelID" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Name" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Row Count"
+              componentClassID="Microsoft.RowCount"
+              contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+              name="Row Count">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable to hold the row count."
+                  name="VariableName">User::VarRowCount</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Row Count.Inputs[Row Count Input 1]"
+                  hasSideEffects="true"
+                  name="Row Count Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Row Count.Outputs[Row Count Output 1]"
+                  name="Row Count Output 1"
+                  synchronousInputId="Package\Data Flow Task\Row Count.Inputs[Row Count Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[Derived Column Output]"
+              endId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Output]"
+              endId="Package\Data Flow Task\Row Count.Inputs[Row Count Input 1]"
+              name="Output"
+              startId="Package\Data Flow Task\OData Source.Outputs[Output]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Row Count Output 1]"
+              endId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
+              name="Row Count Output 1"
+              startId="Package\Data Flow Task\Row Count.Outputs[Row Count Output 1]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{f2612efd-fc8e-4c85-bd27-fd9c008f0e0f}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{D31D2E6E-101F-4269-AE9D-F734C40A6FDC}"
+          SQLTask:SqlStmtSourceType="Variable"
+          SQLTask:SqlStatementSource="User::VarEvaluate"
+          SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="0"
+            SQLTask:DtsVariableName="User::VarValue" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task 1"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{0f629673-99d9-444a-94ea-36489528ecea}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task 1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{D31D2E6E-101F-4269-AE9D-F734C40A6FDC}"
+          SQLTask:SqlStmtSourceType="Variable"
+          SQLTask:SqlStatementSource="User::VarDelete" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{a7d0c807-e988-408f-a2cc-a4b8bd53b3a1}"
+      DTS:EvalOp="4"
+      DTS:Expression="@[User::VarValue]==0"
+      DTS:From="Package\Execute SQL Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Address_DataFlow" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{4b820d95-7c84-4b60-8595-c221a38abdf8}"
+      DTS:EvalOp="4"
+      DTS:Expression="@[User::VarValue]==1"
+      DTS:From="Package\Execute SQL Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Execute SQL Task 1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{acda7c19-76a1-4dd3-9df7-80609c93dfbc}"
+      DTS:From="Package\Execute SQL Task 1"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Data Flow Task" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="166,42"
+          Id="Package\Address_DataFlow"
+          TopLeft="60,205" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Data Flow Task"
+          TopLeft="422,277" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Execute SQL Task"
+          TopLeft="162,60" />
+        <NodeLayout
+          Size="172,42"
+          Id="Package\Execute SQL Task 1"
+          TopLeft="362,139" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="217.666666666667,102">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-74.6666666666667,103"
+              Start="0,0"
+              End="-74.6666666666667,95.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.8007290400972" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,37.8007290400972"
+                    Point2="0,41.8007290400972"
+                    Point3="-4,41.8007290400972" />
+                  <mssgle:LineSegment
+                    End="-70.6666666666667,41.8007290400972" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-70.6666666666667,41.8007290400972"
+                    Point2="-74.6666666666667,41.8007290400972"
+                    Point3="-74.6666666666667,45.8007290400972" />
+                  <mssgle:LineSegment
+                    End="-74.6666666666667,95.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-45.3333333333334,46.8007290400972,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="269.333333333333,102">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="178.666666666667,37"
+              Start="0,0"
+              End="178.666666666667,29.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11.0157958687728" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11.0157958687728"
+                    Point2="0,15.0157958687728"
+                    Point3="4,15.0157958687728" />
+                  <mssgle:LineSegment
+                    End="174.666666666667,15.0157958687728" />
+                  <mssgle:CubicBezierSegment
+                    Point1="174.666666666667,15.0157958687728"
+                    Point2="178.666666666667,15.0157958687728"
+                    Point3="178.666666666667,19.0157958687728" />
+                  <mssgle:LineSegment
+                    End="178.666666666667,29.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="81.3333333333333,20.0157958687728,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="448,181">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="49.5,96"
+              Start="0,0"
+              End="49.5,88.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,44" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,44"
+                    Point2="0,48"
+                    Point3="4,48" />
+                  <mssgle:LineSegment
+                    End="45.5,48" />
+                  <mssgle:CubicBezierSegment
+                    Point1="45.5,48"
+                    Point2="49.5,48"
+                    Point3="49.5,52" />
+                  <mssgle:LineSegment
+                    End="49.5,88.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Address_DataFlow">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Address_DataFlow\OLE DB Destination"
+          TopLeft="158.5,300.5" />
+        <NodeLayout
+          Size="144,42"
+          Id="Package\Address_DataFlow\OData Source"
+          TopLeft="205.5,5.5" />
+        <NodeLayout
+          Size="130,42"
+          Id="Package\Address_DataFlow\Row Count"
+          TopLeft="197.5,124.5" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Address_DataFlow\Derived Column"
+          TopLeft="182.5,203.5" />
+        <EdgeLayout
+          Id="Package\Address_DataFlow.Paths[Output]"
+          TopLeft="277.5,47.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-15,77"
+              Start="0,0"
+              End="-15,69.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.5"
+                    Point2="0,38.5"
+                    Point3="-4,38.5" />
+                  <mssgle:LineSegment
+                    End="-11,38.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-11,38.5"
+                    Point2="-15,38.5"
+                    Point3="-15,42.5" />
+                  <mssgle:LineSegment
+                    End="-15,69.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Address_DataFlow.Paths[Derived Column Output]"
+          TopLeft="259.5,245.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-15.5,55"
+              Start="0,0"
+              End="-15.5,47.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.5"
+                    Point2="0,27.5"
+                    Point3="-4,27.5" />
+                  <mssgle:LineSegment
+                    End="-11.5,27.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-11.5,27.5"
+                    Point2="-15.5,27.5"
+                    Point3="-15.5,31.5" />
+                  <mssgle:LineSegment
+                    End="-15.5,47.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Address_DataFlow.Paths[Row Count Output 1]"
+          TopLeft="261,166.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37"
+              Start="0,0"
+              End="0,29.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Address_DataFlow\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Data Flow Task\OLE DB Destination"
+          TopLeft="60,355" />
+        <NodeLayout
+          Size="144,42"
+          Id="Package\Data Flow Task\OData Source"
+          TopLeft="107,60" />
+        <NodeLayout
+          Size="130,42"
+          Id="Package\Data Flow Task\Row Count"
+          TopLeft="99,179" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Data Flow Task\Derived Column"
+          TopLeft="84,258" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Output]"
+          TopLeft="179,102">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-15,77"
+              Start="0,0"
+              End="-15,69.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.5"
+                    Point2="0,38.5"
+                    Point3="-4,38.5" />
+                  <mssgle:LineSegment
+                    End="-11,38.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-11,38.5"
+                    Point2="-15,38.5"
+                    Point3="-15,42.5" />
+                  <mssgle:LineSegment
+                    End="-15,69.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Derived Column Output]"
+          TopLeft="161,300">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-15.5,55"
+              Start="0,0"
+              End="-15.5,47.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.5"
+                    Point2="0,27.5"
+                    Point3="-4,27.5" />
+                  <mssgle:LineSegment
+                    End="-11.5,27.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-11.5,27.5"
+                    Point2="-15.5,27.5"
+                    Point3="-15.5,31.5" />
+                  <mssgle:LineSegment
+                    End="-15.5,47.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Row Count Output 1]"
+          TopLeft="162.5,221">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,37"
+              Start="0,0"
+              End="0,29.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

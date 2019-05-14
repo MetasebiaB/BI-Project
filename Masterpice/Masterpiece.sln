@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Dunatk_Masterpiece", "Dunatk_Masterpice\Dunatk_Masterpiece.dtproj", "{C1985DED-419E-4413-8BC3-363016C74701}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1985DED-419E-4413-8BC3-363016C74701}.Development|Default.ActiveCfg = Development
+		{C1985DED-419E-4413-8BC3-363016C74701}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {052D1744-F0D5-4FA7-98DA-E079DF42BA08}
+	EndGlobalSection
+EndGlobal

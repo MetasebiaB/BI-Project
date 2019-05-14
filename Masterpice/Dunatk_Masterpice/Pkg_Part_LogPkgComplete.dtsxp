@@ -1,0 +1,137 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="PackagePart"
+  DTS:CreationDate="5/1/2019 12:38:15 PM"
+  DTS:CreationName="Microsoft.DTSPackagePart"
+  DTS:CreatorComputerName="LAPTOP-9HA8H8CP"
+  DTS:CreatorName="LAPTOP-9HA8H8CP\meti"
+  DTS:DTSID="{CDE6B623-F44D-4101-9964-F4CC96177990}"
+  DTS:ExecutableType="Microsoft.DTSPackagePart"
+  DTS:LastModifiedProductVersion="15.0.0900.40"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Pkg_Part_LogPkgComplete"
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{230578E0-5D1C-47D1-93BA-09418C1F2754}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="PackagePart.ConnectionManagers[100.36.220.45,53000.MPSTGT.mbedada]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{2CE4086E-189B-4F7C-92B3-DE733B1D4306}"
+      DTS:ObjectName="100.36.220.45,53000.MPSTGT.mbedada">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=100.36.220.45,53000;User ID=mbedada;Initial Catalog=MPSTGT;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVTDXhtPtXkulx/L4OZ/jzwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACtLb+1RjG2hL29ydn1nq1SsND21EMEBNrqPXlxjTcN5gAAAAAOgAAAAAIAACAAAABsYAD60cYv4KzknUForJ6y9yl+W/HJkrDaM+CUT54z0hAAAADz7qhDJ8KDTRJmeyBxu3W5QAAAADEs05YdT2MrVNvbQIVtodbX6Qe7xCEOfCfj/T4afFOGQ/JPkq+6OtMPH3YINM2Ra8DufXVbyMKS6xlan0e4gcE</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="PackagePart\Execute SQL Task"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{C51B12FF-8FBA-4625-B2B1-07F666E92D19}"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:ThreadHint="0">
+      <DTS:Variables>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:DTSID="{53560A59-705C-4C21-BC1F-3EDDFF819486}"
+          DTS:EvaluateAsExpression="True"
+          DTS:Expression="&quot;DECLARE @packageID uniqueidentifier,&#xA;        @packageName varchar(120),&#xA;&#x9;&#x9;@sourceName varchar(500),&#xA;&#x9;&#x9;@status varchar(10),&#xA;&#x9;&#x9;@EndTime datetime,&#xA;&#x9;&#x9;@RunDate datetime,&#xA;&#x9;&#x9;@RunBy varchar(120)&#xA;&#x9;&#x9;&#xA;&#xA;set @packageID=?&#xA;set @packageName =?&#xA;set @sourceName ='Sharepoint'&#xA;set @status ='C'&#xA;set @EndTime=GETDATE()&#xA;set @RunDate =GETDATE()&#xA;set @RunBy = SUSER_NAME ()&#xA;&#xA;&#xA;INSERT INTO SSIS_Log.[dbo].[PackageLog]&#xA;(&#xA;PackageID,&#xA;PackageName,&#xA;SourceName,&#xA;Status,&#xA;EndTime,&#xA;RunDate,&#xA;RunBy&#xA;)&#xA;VALUES&#xA;(&#xA;@packageID,&#xA;@packageName,&#xA;@sourceName ,&#xA;@status ,&#xA;@EndTime,&#xA;@RunDate,&#xA;@RunBy&#xA; &#xA;)&quot;"
+          DTS:IncludeInDebugDump="2345"
+          DTS:Namespace="User"
+          DTS:ObjectName="VarComplete">
+          <DTS:VariableValue
+            DTS:DataType="8">DECLARE @packageID uniqueidentifier,
+        @packageName varchar(120),
+		@sourceName varchar(500),
+		@status varchar(10),
+		@EndTime datetime,
+		@RunDate datetime,
+		@RunBy varchar(120)
+		
+
+set @packageID=?
+set @packageName =?
+set @sourceName ='Sharepoint'
+set @status ='C'
+set @EndTime=GETDATE()
+set @RunDate =GETDATE()
+set @RunBy = SUSER_NAME ()
+
+
+INSERT INTO SSIS_Log.[dbo].[PackageLog]
+(
+PackageID,
+PackageName,
+SourceName,
+Status,
+EndTime,
+RunDate,
+RunBy
+)
+VALUES
+(
+@packageID,
+@packageName,
+@sourceName ,
+@status ,
+@EndTime,
+@RunDate,
+@RunBy
+ 
+)</DTS:VariableValue>
+        </DTS:Variable>
+      </DTS:Variables>
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{2CE4086E-189B-4F7C-92B3-DE733B1D4306}"
+          SQLTask:SqlStmtSourceType="Variable"
+          SQLTask:SqlStatementSource="User::VarComplete" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="System::PackageID"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="72"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="1"
+            SQLTask:DtsVariableName="System::PackageName"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <PackagePart
+    design-time-name="PackagePart">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="163,42"
+          Id="PackagePart\Execute SQL Task"
+          TopLeft="152.5,68.5" />
+      </GraphLayout>
+    </LayoutInfo>
+  </PackagePart>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

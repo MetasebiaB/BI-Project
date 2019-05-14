@@ -1,0 +1,192 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/11/2019 8:54:43 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-9HA8H8CP"
+  DTS:CreatorName="LAPTOP-9HA8H8CP\meti"
+  DTS:DTSID="{ECB9DD36-99F2-4EF7-B55E-6937F4F892C4}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.0900.40"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package4"
+  DTS:PackageType="5"
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{B79A0DD6-C490-462D-AE54-8B69655A68FF}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{E7FC40C9-3EFD-4B0C-A10B-12074F407014}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;The package&quot;+ @[System::PackageName]+&quot;\n&quot;+&quot;is completed at&quot;+ (DT_WSTR, 50) @[System::StartTime]+&quot;\n&quot;+&quot;and the number of rows imported are &quot;+ (DT_WSTR, 50) @[User::RowCount]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="EmailBodyC">
+      <DTS:VariableValue
+        DTS:DataType="8">The packagePackage4
+is completed at5/11/2019 8:54:43 PM
+and the number of rows imported are </DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{7E80104F-D374-4AF6-9E3C-634ADE394592}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;The package&quot;+ @[System::PackageName] +&quot;is complete with error&quot; + @[System::ErrorDescription]+&#xA;&quot;\n&quot;+&quot;at&quot;+ (DT_WSTR, 60) @[System::StartTime] +&quot;\n&quot; +&quot; the task name is&quot; + @[System::TaskName]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="EmailBodyE">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{76C1020F-F2A6-466A-8C5F-C5F5B848A6BE}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;The package &quot;+ @[System::PackageName] +&quot;is started at &quot;+ (DT_WSTR, 50) @[System::StartTime]"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="EmailBodyS">
+      <DTS:VariableValue
+        DTS:DataType="8">The package Package4is started at 5/11/2019 8:54:43 PM</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{AE4B50E3-276A-49BF-B0D8-31A71280193B}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;metiduna@gmail.com&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Emailfrom">
+      <DTS:VariableValue
+        DTS:DataType="8">metiduna@gmail.com</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{CB23860D-02D8-42BB-BE72-CF03604ACD2F}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;your SSIS package&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="EmailSubject">
+      <DTS:VariableValue
+        DTS:DataType="8">your SSIS package</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{708CEF03-9033-47EF-937C-661256EC06E5}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;mikimt05@gmail.com&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="EmailTo">
+      <DTS:VariableValue
+        DTS:DataType="8">mikimt05@gmail.com</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{67A9DEA6-3B64-4722-A9AF-AA3BD1FDC5F2}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="RowCount">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Script Task"
+      DTS:CreationName="Microsoft.ScriptTask"
+      DTS:Description="Script Task"
+      DTS:DTSID="{62173329-BC9D-4CB3-9FA8-0AA77B108B02}"
+      DTS:ExecutableType="Microsoft.ScriptTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Script Task"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ScriptProject
+          Name="ST_370a9a9a734840df96311d71a24bd133"
+          VSTAMajorVersion="15"
+          VSTAMinorVersion="0"
+          Language="CSharp" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:EventHandlers>
+    <DTS:EventHandler
+      DTS:refId="Package.EventHandlers[OnError]"
+      DTS:CreationName="OnError"
+      DTS:DTSID="{9BA27EA8-5C94-4065-8E2C-E73960E4918F}"
+      DTS:EventID="0"
+      DTS:EventName="OnError"
+      DTS:LocaleID="-1">
+      <DTS:Variables>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:Description="The propagate property of the event"
+          DTS:DTSID="{E949B457-9040-414C-97A1-E8F8B1AC0C14}"
+          DTS:IncludeInDebugDump="6789"
+          DTS:Namespace="System"
+          DTS:ObjectName="Propagate">
+          <DTS:VariableValue
+            DTS:DataType="11">-1</DTS:VariableValue>
+        </DTS:Variable>
+      </DTS:Variables>
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package.EventHandlers[OnError]\Script Task"
+          DTS:CreationName="Microsoft.ScriptTask"
+          DTS:Description="Script Task"
+          DTS:DTSID="{2B81F7AF-2F17-44F1-9462-E1376C7AE22A}"
+          DTS:ExecutableType="Microsoft.ScriptTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Script Task">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <ScriptProject
+              Name="ST_3387680f84dd4ec08dedd0ab93ae0910"
+              VSTAMajorVersion="15"
+              VSTAMinorVersion="0"
+              Language="CSharp" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:EventHandler>
+  </DTS:EventHandlers>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="131,42"
+          Id="Package\Script Task"
+          TopLeft="439.5,103.5" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <DtsEventHandler
+    design-time-name="Package.EventHandlers[OnError]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="131,42"
+          Id="Package.EventHandlers[OnError]\Script Task"
+          TopLeft="5.5,5.5" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
