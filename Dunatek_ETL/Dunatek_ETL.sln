@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "MPETL", "MPETL\MPETL.dtproj", "{282CD0C7-D434-4D67-AEE6-39661D3FAEA0}"
+EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Dunatk_Masterpiece", "..\Masterpice\Dunatk_Masterpice\Dunatk_Masterpiece.dtproj", "{C89B91A9-CE3E-4F92-AE7C-CA86C26A182B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{282CD0C7-D434-4D67-AEE6-39661D3FAEA0}.Development|Default.ActiveCfg = Development
+		{282CD0C7-D434-4D67-AEE6-39661D3FAEA0}.Development|Default.Build.0 = Development
+		{C89B91A9-CE3E-4F92-AE7C-CA86C26A182B}.Development|Default.ActiveCfg = Development
+		{C89B91A9-CE3E-4F92-AE7C-CA86C26A182B}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1BC27FC8-9282-4510-9707-B8AA919F71EC}
+	EndGlobalSection
+EndGlobal
